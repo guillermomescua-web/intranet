@@ -275,13 +275,12 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 3rem;
       align-items: center;
       padding: 4rem 0 5rem;
-      text-align: center;
     }
-    .hero-copy { max-width: 820px; margin-inline: auto; }
+    .hero-copy { max-width: 720px; }
     .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -314,7 +313,7 @@
       max-width: 620px;
       color: rgba(255,255,255,.92);
     }
-    .hero-actions { margin-top: 2rem; display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .hero-actions { margin-top: 2rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
     .hero-note { font-size: .95rem; color: rgba(255,255,255,.82); }
     .hero-visual { display: flex; justify-content: center; align-items: center; }
     .hero-card {
@@ -617,21 +616,20 @@
     .hero-stats {
       grid-column: 1 / -1;
       display: flex;
-      gap: 4rem;
+      gap: 2rem;
       flex-wrap: wrap;
-      justify-content: center;
       margin-top: 2.5rem;
       padding-top: 2rem;
       border-top: 1px solid rgba(255,255,255,.18);
     }
     .stat-item { display: flex; flex-direction: column; gap: .2rem; }
     .stat-number {
-      font-size: clamp(3rem, 6vw, 5rem);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
       font-weight: 850;
       letter-spacing: -.04em;
       color: white;
     }
-    .stat-label { font-size: 1rem; color: rgba(255,255,255,.78); font-weight: 500; }
+    .stat-label { font-size: .88rem; color: rgba(255,255,255,.78); font-weight: 500; }
 
     /* ── WHATSAPP FAB ── */
     .whatsapp-fab {
@@ -666,10 +664,22 @@
     .footer-legal a:hover { color: var(--color-primary-dark); }
 
   </style>
+
+  <style>
+    .legal-page { padding: 9rem 0 5rem; min-height: 80vh; }
+    .legal-page h1 { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; letter-spacing: -.03em; margin-bottom: .5rem; }
+    .legal-page .meta { color: var(--color-text-muted); font-size: .9rem; margin-bottom: 2.5rem; }
+    .legal-page h2 { font-size: 1.15rem; font-weight: 700; margin: 2rem 0 .6rem; color: var(--color-primary-dark); }
+    .legal-page p, .legal-page li { color: var(--color-text-muted); font-size: .97rem; line-height: 1.75; }
+    .legal-page ul { padding-left: 1.4rem; margin-bottom: 1rem; }
+    .legal-page a { color: var(--color-primary-dark); text-decoration: underline; }
+    .legal-divider { border: none; border-top: 1px solid var(--color-border); margin: 2rem 0; }
+  </style>
+
 </head>
 <body>
 
-  <!-- NAVBAR -->
+<!-- NAVBAR -->
   <header class="site-header" id="top">
     <div class="container">
       <div class="nav-shell">
@@ -689,9 +699,9 @@
           </button>
 
           <div class="nav-links" id="navLinks">
-            <a href="#quienes-somos" data-i18n="nav.about">Quiénes Somos</a>
-            <a href="#servicios"     data-i18n="nav.services">Servicios</a>
-            <a href="#contacto"      data-i18n="nav.contact">Contacto</a>
+            <a href="index.html#quienes-somos" data-i18n="nav.about">Quiénes Somos</a>
+            <a href="index.html#servicios"     data-i18n="nav.services">Servicios</a>
+            <a href="index.html#contacto"      data-i18n="nav.contact">Contacto</a>
             <a href="intranet.html"  class="btn-intranet-mobile" data-i18n="nav.intranet">🔒 Acceder a la Intranet</a>
           </div>
 
@@ -715,226 +725,41 @@
   </header>
 
   <main>
+    <section class="legal-page">
+      <div class="container" style="max-width:820px;">
+        
+        <span class="eyebrow">Legal</span>
+        <h1>Aviso Legal</h1>
+        <p class="meta">Última actualización: mayo de 2026</p>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <div class="hero-badge hero-animate" data-i18n="hero.badge">Empresa de seguridad y soluciones técnicas</div>
-            <h1 class="hero-animate" data-i18n="hero.title">Seguridad. Precisión. Confianza.</h1>
-            <p class="hero-animate" data-i18n="hero.subtitle">Soluciones técnicas de seguridad adaptadas a tu medida.</p>
-            <div class="hero-actions hero-animate">
-              <a href="#contacto" class="btn btn-primary" data-i18n="hero.cta">Solicitar consulta</a>
-              <span class="hero-note" data-i18n="hero.note">Enfoque técnico, atención cercana y ejecución rigurosa.</span>
-            </div>
-          </div>
+        <h2>1. Datos identificativos</h2>
+        <p>En cumplimiento del artículo 10 de la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI), se informa:</p>
+        <ul>
+          <li><strong>Denominación social:</strong> GIBRALTRONIC S.L.</li>
+          <li><strong>CIF:</strong> B-XXXXXXXX</li>
+          <li><strong>Domicilio:</strong> [Dirección], España</li>
+          <li><strong>Correo electrónico:</strong> <a href="mailto:info@gibraltronic.es">info@gibraltronic.es</a></li>
+          <li><strong>Sitio web:</strong> www.gibraltronic.es</li>
+          <li><strong>Registro Mercantil:</strong> [Datos de inscripción]</li>
+        </ul>
 
-          <!-- STATS -->
-          <div class="hero-stats hero-animate">
-            <div class="stat-item">
-              <span class="stat-number">+150</span>
-              <span class="stat-label">Proyectos completados</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">+12</span>
-              <span class="stat-label">Años de experiencia</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">98%</span>
-              <span class="stat-label">Clientes satisfechos</span>
-            </div>
-          </div>
-          
-        </div>
+        <h2>2. Objeto y ámbito de aplicación</h2>
+        <p>El presente Aviso Legal regula el acceso y uso del sitio web <strong>www.gibraltronic.es</strong>. El acceso al sitio implica la aceptación plena de las presentes condiciones.</p>
+
+        <h2>3. Propiedad intelectual e industrial</h2>
+        <p>Todos los contenidos del sitio web (textos, imágenes, logotipos, diseño, código fuente) son propiedad de GIBRALTRONIC S.L. o de terceros que han autorizado su uso. Queda prohibida su reproducción, distribución o modificación sin autorización expresa.</p>
+
+        <h2>4. Responsabilidad</h2>
+        <p>GIBRALTRONIC S.L. no se hace responsable de los daños derivados del uso del sitio web, de errores en los contenidos ni de la disponibilidad técnica del servicio. Los enlaces a sitios externos son meramente informativos y no implican responsabilidad sobre sus contenidos.</p>
+
+        <h2>5. Ley aplicable y jurisdicción</h2>
+        <p>Las presentes condiciones se rigen por la legislación española. Para la resolución de conflictos, las partes se someten a los juzgados y tribunales del domicilio social de GIBRALTRONIC S.L., salvo que la normativa aplicable establezca otro fuero.</p>
+
       </div>
     </section>
-
-    <!-- QUIÉNES SOMOS -->
-    <section class="section" id="quienes-somos">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-copy reveal">
-            <span class="eyebrow" data-i18n="about.eyebrow">Nuestra empresa</span>
-            <h2 class="section-title" data-i18n="about.title">Quiénes Somos</h2>
-            <p data-i18n="about.text">
-              GIBRALTRONIC S.L. es una empresa especializada en seguridad y soluciones técnicas integrales. Nuestro equipo combina experiencia, tecnología avanzada y un enfoque personalizado para proteger lo que más importa a nuestros clientes. Trabajamos con rigor, discreción y compromiso en cada proyecto.
-            </p>
-            <div class="values">
-              <div class="value-item">
-                <div class="value-icon" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 3L19 6V11C19 15.4183 16.3137 19.3602 12 21C7.68629 19.3602 5 15.4183 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                    <path d="M9.2 11.8L11 13.6L14.8 9.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <strong data-i18n="about.values.trust">Confianza</strong>
-              </div>
-              <div class="value-item">
-                <div class="value-icon" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 4L20 8V16L12 20L4 16V8L12 4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                    <path d="M12 8.5L15.5 12L12 15.5L8.5 12L12 8.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <strong data-i18n="about.values.precision">Precisión</strong>
-              </div>
-              <div class="value-item">
-                <div class="value-icon" aria-hidden="true">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M6 12L10 16L18 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12Z" stroke="currentColor" stroke-width="1.8"/>
-                  </svg>
-                </div>
-                <strong data-i18n="about.values.commitment">Compromiso</strong>
-              </div>
-            </div>
-          </div>
-          <div class="about-visual reveal" aria-hidden="true">
-            <svg class="abstract-art" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="g1" x1="90" y1="50" x2="490" y2="420">
-                  <stop offset="0%" stop-color="#4FC3F7" stop-opacity=".95"/>
-                  <stop offset="100%" stop-color="#0288D1" stop-opacity=".85"/>
-                </linearGradient>
-                <linearGradient id="g2" x1="120" y1="140" x2="520" y2="320">
-                  <stop offset="0%" stop-color="#B3E5FC" stop-opacity=".9"/>
-                  <stop offset="100%" stop-color="#4FC3F7" stop-opacity=".25"/>
-                </linearGradient>
-              </defs>
-              <rect x="86" y="92" width="192" height="192" rx="42" fill="url(#g1)" opacity=".92"/>
-              <rect x="238" y="150" width="238" height="238" rx="56" fill="url(#g2)"/>
-              <circle cx="458" cy="110" r="46" fill="#B3E5FC" fill-opacity=".7"/>
-              <circle cx="180" cy="380" r="68" fill="#0288D1" fill-opacity=".12"/>
-              <path d="M116 116H246" stroke="white" stroke-opacity=".72" stroke-width="10" stroke-linecap="round"/>
-              <path d="M116 148H214" stroke="white" stroke-opacity=".44" stroke-width="10" stroke-linecap="round"/>
-              <path d="M272 206H416" stroke="#0288D1" stroke-opacity=".7" stroke-width="10" stroke-linecap="round"/>
-              <path d="M272 242H392" stroke="#0288D1" stroke-opacity=".38" stroke-width="10" stroke-linecap="round"/>
-              <path d="M272 278H364" stroke="#0288D1" stroke-opacity=".24" stroke-width="10" stroke-linecap="round"/>
-            </svg>
-            <div class="abstract-panel"><div></div><div></div><div></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section class="section" id="servicios">
-      <div class="container">
-        <div class="services-head reveal">
-          <span class="eyebrow" data-i18n="services.eyebrow">Áreas de servicio</span>
-          <h2 class="section-title" data-i18n="services.title">Nuestros Servicios</h2>
-          <p class="section-subtitle" data-i18n="services.subtitle">Soluciones diseñadas para responder con precisión a cada necesidad técnica y operativa.</p>
-        </div>
-        <div class="services-grid">
-          <article class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                <path d="M10.5 4H6.8C5.806 4 5 4.806 5 5.8V17.2C5 18.194 5.806 19 6.8 19H18.2C19.194 19 20 18.194 20 17.2V13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M14 5H19V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 14L19 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 data-i18n="services.cards.security.title">Consultoría de Seguridad</h3>
-            <p data-i18n="services.cards.security.description">Analizamos tus necesidades e identificamos vulnerabilidades para ofrecerte una estrategia de seguridad a medida.</p>
-            <a href="#contacto" class="service-link" data-i18n="services.consult">Consultar →</a>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                <path d="M7 7H17V17H7V7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                <path d="M10 3V7M14 3V7M10 17V21M14 17V21M3 10H7M17 10H21M3 14H7M17 14H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 data-i18n="services.cards.replacement.title">Reemplazo de Equipamiento</h3>
-            <p data-i18n="services.cards.replacement.description">Gestionamos la sustitución e instalación de equipos de seguridad con tecnología actualizada y de máxima fiabilidad.</p>
-            <a href="#contacto" class="service-link" data-i18n="services.consult">Consultar →</a>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3L20 7.5V16.5L12 21L4 16.5V7.5L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                <path d="M12 12L20 7.5M12 12V21M12 12L4 7.5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h3 data-i18n="services.cards.projects.title">Proyectos Personalizados</h3>
-            <p data-i18n="services.cards.projects.description">Diseñamos e implementamos soluciones completas adaptadas a las particularidades de cada cliente y entorno.</p>
-            <a href="#contacto" class="service-link" data-i18n="services.consult">Consultar →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section class="section contact" id="contacto">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-copy reveal">
-            <span class="eyebrow" data-i18n="contact.eyebrow">Hablemos</span>
-            <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
-            <p class="section-subtitle" data-i18n="contact.subtitle">Escríbenos o agenda una cita y te asesoramos sin compromiso.</p>
-          </div>
-          <div class="contact-card reveal">
-            <form class="contact-form" id="contactForm">
-              <div class="form-grid">
-                <div class="field">
-                  <label for="name" data-i18n="contact.form.nameLabel">Nombre completo</label>
-                  <input type="text" id="name" name="name" required placeholder="Tu nombre" data-i18n-placeholder="contact.form.namePlaceholder"/>
-                </div>
-                <div class="field">
-                  <label for="email" data-i18n="contact.form.emailLabel">Email</label>
-                  <input type="email" id="email" name="email" required placeholder="tu@email.com" data-i18n-placeholder="contact.form.emailPlaceholder"/>
-                </div>
-                <div class="field">
-                  <label for="phone" data-i18n="contact.form.phoneLabel">Teléfono</label>
-                  <input type="tel" id="phone" name="phone" placeholder="+34 600 000 000" data-i18n-placeholder="contact.form.phonePlaceholder"/>
-                </div>
-                <div class="field full">
-                  <label for="message" data-i18n="contact.form.messageLabel">Mensaje</label>
-                  <textarea id="message" name="message" required placeholder="Cuéntanos brevemente tu necesidad" data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
-                </div>
-                <div class="field full">
-                  <button type="submit" class="btn btn-submit" data-i18n="contact.form.submit">Enviar consulta</button>
-                </div>
-              </div>
-            </form>
-            <p class="contact-note" data-i18n="contact.note">Nos pondremos en contacto contigo a la brevedad posible.</p>
-            <div class="form-confirmation" id="formConfirmation" data-i18n="contact.confirmation">¡Consulta enviada! Nos pondremos en contacto pronto.</div>
-          </div>
-        </div>
-      </div>
-
-        <!-- GOOGLE CALENDAR BOOKING — reemplaza BOOKING_PAGE_URL con tu enlace de Google Calendar -->
-        <div class="calendar-booking">
-          <div class="eyebrow" style="margin-top:3rem;" data-i18n="contact.calendar.eyebrow">
-            Agenda tu cita
-          </div>
-          <p class="section-subtitle" style="margin-bottom:1.5rem;" data-i18n="contact.calendar.subtitle">
-            Selecciona el día y hora que mejor te convengan directamente en nuestro calendario.
-          </p>
-          <div class="calendar-frame-wrapper" id="calendarWrapper">
-            <div class="calendar-placeholder" id="calendarPlaceholder">
-              <span>📅</span>
-              <p>Reserva de citas</p>
-              <small>Pendiente de configurar Google Workspace</small>
-            </div>
-            <iframe
-              src="about:blank"
-              data-booking-src="BOOKING_PAGE_URL"
-              class="calendar-frame"
-              frameborder="0"
-              title="Agenda una cita con GIBRALTRONIC S.L."
-              allow="camera; microphone; fullscreen">
-              Tu navegador no soporta iframes. <a href="BOOKING_PAGE_URL" target="_blank">Haz clic aquí para agendar tu cita</a>.
-            </iframe>
-          </div>
-        </div>
-      
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
+<!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -961,13 +786,11 @@
     </div>
   </footer>
 
-  <!-- GSAP -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js"></script>
 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
 
+  <script>
     const translations = {
       es: {
         nav: { about:"Quiénes Somos", services:"Servicios", contact:"Contacto", intranet:"Intranet", menuAria:"Abrir menú" },
@@ -988,7 +811,9 @@
     };
 
     let currentLang = "es";
+
     function getVal(obj, path) { return path.split(".").reduce((a,k) => a&&a[k], obj); }
+
 
     function applyTranslations(lang) {
       currentLang = lang;
@@ -997,12 +822,8 @@
         const v = getVal(translations[lang], el.getAttribute("data-i18n"));
         if (v) el.textContent = v;
       });
-      document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-        const v = getVal(translations[lang], el.getAttribute("data-i18n-placeholder"));
-        if (v) el.setAttribute("placeholder", v);
-      });
-      document.getElementById("menuToggle").setAttribute("aria-label", translations[lang].nav.menuAria);
       document.querySelectorAll(".lang-btn").forEach(btn => btn.classList.toggle("active", btn.dataset.lang === lang));
+      document.getElementById("menuToggle").setAttribute("aria-label", translations[lang].nav.menuAria);
     }
 
     document.querySelectorAll(".lang-btn").forEach(btn => btn.addEventListener("click", () => applyTranslations(btn.dataset.lang)));
@@ -1019,44 +840,10 @@
       menuToggle.classList.toggle("is-open", open);
       menuToggle.setAttribute("aria-expanded", open);
     });
-    document.querySelectorAll(".nav-links a, .footer-nav a, .service-link").forEach(l => {
-      l.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-        menuToggle.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-      });
-    });
-
-    // GSAP hero
-    gsap.from(".hero-animate", { y:36, opacity:0, duration:1, ease:"power3.out", stagger:.14, delay:.15 });
-
-    // GSAP scroll reveal
-    gsap.utils.toArray(".reveal").forEach(el => {
-      gsap.fromTo(el, { y:28, opacity:0 }, { y:0, opacity:1, duration:.95, ease:"power3.out",
-        scrollTrigger:{ trigger:el, start:"top 82%" }
-      });
-    });
-
-    // Formulario
-    document.getElementById("contactForm").addEventListener("submit", e => {
-      e.preventDefault();
-      if (!e.target.checkValidity()) { e.target.reportValidity(); return; }
-      const conf = document.getElementById("formConfirmation");
-      conf.style.display = "block";
-      gsap.fromTo(conf, { y:14, opacity:0, scale:.98 }, { y:0, opacity:1, scale:1, duration:.55, ease:"power3.out" });
-      e.target.reset();
-    });
 
     applyTranslations("es");
   </script>
 
-  <!-- WHATSAPP FLOTANTE -->
-  <a href="https://wa.me/34600000000" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.532 5.857L.057 23.625a.75.75 0 00.918.918l5.768-1.475A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.708 9.708 0 01-4.953-1.355l-.355-.212-3.674.938.955-3.589-.231-.369A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
-    </svg>
-  </a>
 
 </body>
 </html>
